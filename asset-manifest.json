@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/gudayhub1/static/css/main.f855e6bc.css",
+    "main.js": "/gudayhub1/static/js/main.3f5a5b1e.js",
+    "static/js/453.4b9defed.chunk.js": "/gudayhub1/static/js/453.4b9defed.chunk.js",
+    "static/media/logo.svg": "/gudayhub1/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/gudayhub1/index.html",
+    "main.f855e6bc.css.map": "/gudayhub1/static/css/main.f855e6bc.css.map",
+    "main.3f5a5b1e.js.map": "/gudayhub1/static/js/main.3f5a5b1e.js.map",
+    "453.4b9defed.chunk.js.map": "/gudayhub1/static/js/453.4b9defed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.3f5a5b1e.js"
+  ]
+}
