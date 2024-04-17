@@ -18,7 +18,7 @@ window.addEventListener('scroll',changeBackground)
 
   return (
  <nav className={nav ? "nav active" :"nav"}>
-     <Link to='#' className='logo'>
+    <Link to='#' className='logo'>
         <img src={logo} alt="" />
      </Link>
      <input className='menu-btn' type='checkbox' id='menu-btn'/>
