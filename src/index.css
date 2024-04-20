@@ -28,18 +28,24 @@ input{
   width: 100px;
   
 }
-body.active-popup{
-  overflow: hidden;
+.popup{
+  display: flex;
+  align-items: center;
 }
 .popup-content{
   width: 410px;
   height: 460px;
   margin: -230px;
   border-radius: 20px;
-  background-color: #e08383;
+  background-color: rgba(198, 64, 64, 0.411);
   box-shadow: 5px 10px 30px rgba(15, 15, 15, 0.918);
   position: relative;
   text-align: center;
+}
+.h3-register{
+  font-size: 1.2rem;
+text-transform: uppercase;
+font-weight: 500;
 }
 .popup-btn {
   cursor: pointer;
@@ -83,12 +89,27 @@ body.active-popup{
   scale: 1;
 }
 
-
-
+#main .login-popup{
+  position: relative;
+  transition: none;
+  translate: 140px;
+}
+#main .active .popup-content{
+transition: none;
+translate: -140px;
+}
+#main .active .login-popup{
+  transition: translate .18s ease;
+  translate: 0;
+  }
+/*.active-popup{
+  overflow: hidden;
+}
+*/
 .input {
   margin: 10px;
   border: 2px solid transparent;
-  width: 15em;
+  width: 25em;
   height: 2.5em;
   padding-left: 0.8em;
   outline: none;
@@ -112,7 +133,7 @@ body.active-popup{
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-
+  display: flex;
   position: relative;
   z-index: 0;
 }
@@ -154,7 +175,7 @@ transition: all ease 0.2s;
   color:#ffffff;
 box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
 transition: all ease 0.2s;
-}
+} 
 nav ul li a{
   font-family: 'Lato';
 height:40px;

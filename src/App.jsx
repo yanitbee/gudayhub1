@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
+import Helpidk from './components/Helpidk'
 
 function App() {
   
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Home/>
+      <Helpidk/>
     </div>
   )
 }

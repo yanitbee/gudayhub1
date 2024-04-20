@@ -26,11 +26,11 @@ window.addEventListener('scroll',changeBackground)
         <span className='nav-icon'></span>
      </label>
      <ul className='menu'>
-        <li><Link to='#'>Home</Link></li>
-        <li><Link to='#'>Helpidk</Link></li>
-        <li><Link to='#'>About</Link></li>
-        <li><Link to='#'>Contact</Link></li>
-        <li><Link to='#'>Register</Link></li>
+        <li><Link to='main' smooth={true} duration={500}>Home</Link></li>
+        <li><Link to='helpidk' smooth={true} duration={500}>Helpidk</Link></li>
+        <li><Link to='#' smooth={true} duration={500}>About</Link></li>
+        <li><Link to='#' smooth={true} duration={500}>Contact</Link></li>
+        <li><Link to='main' smooth={true} duration={500}>Register</Link></li>
      </ul>
  </nav>
   )

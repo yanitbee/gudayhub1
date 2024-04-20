@@ -2,6 +2,15 @@ import React, {useState} from 'react'
 
 const Home=()=> {
   
+    const [action, setAction] = useState('');
+
+    const loginLink = () =>{
+      setAction('active')
+    }
+    const registerLink = () =>{
+      setAction('')
+    }
+
       const [popup, setPopup] = useState(false);
   
   
@@ -26,10 +35,10 @@ const Home=()=> {
         <button className='header-btn' onClick={togglePopup}>Register Now</button>
 
       {popup && (
-        <div className="popup">
+        <div className={`popup${action}`}>
         <div onClick={togglePopup} className="overlay"></div>
           <div className="popup-content">
-            <h3>Register</h3>
+            <h3 className="h3-register">Register</h3>
             <input type="radio" name="user" value="freelancer" /> Freelancer
             <input type="radio" name="user" value="employer" /> Employer <br />
             <input className="input" type="text" placeholder='Fullname' />
@@ -40,12 +49,20 @@ const Home=()=> {
             <input type="radio" name="gender" value="female" /> Female
             <br /> <br />
             <button className='popup-btn' >Submit</button>
-            <p>Already have an account. LogIn</p>
-            <button className='popup-btn' onClick={togglePopup}>Close</button>
+            <p>Already have an account. <a href="#" onClick={loginLink}>LogIn</a></p>
+            <button className='popup-btn' id='x' onClick={togglePopup}>X</button>
           </div>
-        
+        <div className="login-popup">
+        <h3 className="h3-login">LogIn</h3>
+        <input className="input" type="text" placeholder='Username' /> 
+            <input className="input" type="password" placeholder='Password' /> <br />
+            <button className='popup-btn' >LogIn</button>
+            <p>Don't have an account. <a href="#" onClick={registerLink}>Register</a></p>
+            <button className='popup-btn' id='x' onClick={togglePopup}>X</button>
+        </div>
       </div>
 
+         
       )}
     </div>
 </div>
