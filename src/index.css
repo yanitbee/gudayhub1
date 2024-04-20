@@ -33,16 +33,18 @@ input{
   align-items: center;
 }
 .popup-content{
-  width: 410px;
-  height: 460px;
+  width: 420px;
+  height: 480px;
   margin: -230px;
   border-radius: 20px;
-  background-color: rgba(198, 64, 64, 0.411);
+  color: #ffffff;
+  background-color: rgba(14, 13, 13, 0.815);
   box-shadow: 5px 10px 30px rgba(15, 15, 15, 0.918);
-  position: relative;
+  position: absolute;
   text-align: center;
 }
 .h3-register{
+  color: #ffffff;
   font-size: 1.2rem;
 text-transform: uppercase;
 font-weight: 500;
