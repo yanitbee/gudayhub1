@@ -33,7 +33,7 @@ const Home=()=> {
       
       <div className='header-btns'>
         <button className='header-btn' onClick={togglePopup}>Register Now</button>
-
+      <div className="wrapper">
       {popup && (
         <div className={`popup${action}`}>
         <div onClick={togglePopup} className="overlay"></div>
@@ -45,8 +45,8 @@ const Home=()=> {
             <input className="input" type="text" placeholder='Phonenumber' />
             <input className="input" type="email" placeholder='Email' /> 
             <input className="input" type="password" placeholder='Password' /> <br />
-            <input type="radio" name="gender" value="male" /> Male
-            <input type="radio" name="gender" value="female" /> Female
+            <input className="radio" type="radio" name="gender" value="male" /> Male
+            <input className="radio" type="radio" name="gender" value="female" /> Female
             <br /> <br />
             <button className='popup-btn' >Submit</button>
             <p>Already have an account. <a href="#" onClick={loginLink}>LogIn</a></p>
@@ -64,6 +64,8 @@ const Home=()=> {
 
          
       )}
+      </div> 
+      
     </div>
 </div>
     </div>

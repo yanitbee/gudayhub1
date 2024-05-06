@@ -91,19 +91,19 @@ font-weight: 500;
   scale: 1;
 }
 
-#main .login-popup{
+/*.wrapper .login-popup{
   position: relative;
   transition: none;
   translate: 140px;
 }
-#main .active .popup-content{
+.wrapper .active .popup-content{
 transition: none;
 translate: -140px;
 }
-#main .active .login-popup{
+.wrapper .active .login-popup{
   transition: translate .18s ease;
   translate: 0;
-  }
+  }*/
 /*.active-popup{
   overflow: hidden;
 }
