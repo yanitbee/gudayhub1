@@ -14,7 +14,7 @@ app.use(cors());
 app.get("/readfromserver", (req, res)=>{
     res.json({message: "hello from server"});
 })
-app.post("writetodatabase", async (req, res)=>{
+app.post("/writetodatabase", async (req, res)=>{
     try{
         const {content} = req.body;
         const newData = new DataModel({content})
