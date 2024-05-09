@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import axios from "axios";
 
 const Home=()=> {
   
@@ -24,6 +25,12 @@ const Home=()=> {
     document.body.classList.remove('active-popup')
   }
 
+  let [inputvalue, setInputValue] = useState("");
+
+    const saveData = async () =>{
+
+    }
+
   return (
     <div id='main'>
 
@@ -41,14 +48,15 @@ const Home=()=> {
             <h3 className="h3-register">Register</h3>
             <input type="radio" name="user" value="freelancer" /> Freelancer
             <input type="radio" name="user" value="employer" /> Employer <br />
-            <input className="input" type="text" placeholder='Fullname' />
+            <input className="input" type="text" placeholder='Fullname'  value={inputvalue}
+            onChange={e => setInputValue(e.target.value)}/>
             <input className="input" type="text" placeholder='Phonenumber' />
             <input className="input" type="email" placeholder='Email' /> 
             <input className="input" type="password" placeholder='Password' /> <br />
             <input className="radio" type="radio" name="gender" value="male" /> Male
             <input className="radio" type="radio" name="gender" value="female" /> Female
             <br /> <br />
-            <button className='popup-btn' >Submit</button>
+            <button className='popup-btn' onClick={saveData} >Submit</button>
             <p>Already have an account. <a href="#" onClick={loginLink}>LogIn</a></p>
             <button className='popup-btn' id='x' onClick={togglePopup}>X</button>
           </div>
