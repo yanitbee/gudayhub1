@@ -12,36 +12,35 @@ export default function Write(){
         console.log("errorr", error)
     }
     }
-    console.log(inputValue.content)
     return(
         <>
         <div>
             <input style={{border:"solid"}} type="string" value={inputValue.content}
-            onChange={e => setinputValue(e.target.value) }/>
+            onChange={e => setinputValue({ ...inputValue, content: e.target.value}) }/>
             </div>
             <div>
              <input style={{border:"solid"}} type="string" value={inputValue.Usertype}
-            onChange={e => setinputValue(e.target.value) }/>
+            onChange={e => setinputValue({ ...inputValue, Usertype: e.target.value}) }/>
              </div>
              <div>
              <input style={{border:"solid"}} type="string" value={inputValue.Fullname}
-            onChange={e => setinputValue(e.target.value) }/>
+            onChange={e => setinputValue({ ...inputValue, Fullname: e.target.value}) }/>
              </div>
              <div>
              <input style={{border:"solid"}} type="string" value={inputValue.Phonenumber}
-            onChange={e => setinputValue(e.target.value) }/>
+            onChange={e => setinputValue({ ...inputValue, Phonenumber: e.target.value}) }/>
 </div>
 <div>
              <input style={{border:"solid"}} type="string" value={inputValue.Password}
-            onChange={e => setinputValue(e.target.value) }/>
+            onChange={e => setinputValue({ ...inputValue, Password: e.target.value}) }/>
 </div>
 <div>
              <input style={{border:"solid"}} type="string" value={inputValue.Gender}
-            onChange={e => setinputValue(e.target.value) }/>
+            onChange={e => setinputValue({ ...inputValue, Gender: e.target.value}) }/>
             </div>
             <div>
              <input style={{border:"solid"}} type="string" value={inputValue.Email}
-            onChange={e => setinputValue(e.target.value) }/>
+            onChange={e => setinputValue({ ...inputValue, Email: e.target.value}) }/>
             <button onClick={saveData}>save</button>
             </div>
             </>
