@@ -9,8 +9,9 @@ function App() {
 
   return (
     <div className="App">
-    
-      <Write/>
+      <Navbar/>
+      <Home/>
+      <Helpidk/>
     </div>
   )
 }

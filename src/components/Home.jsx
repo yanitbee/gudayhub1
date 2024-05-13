@@ -25,11 +25,16 @@ const Home=()=> {
     document.body.classList.remove('active-popup')
   }
 
-  let [inputvalue, setInputValue] = useState("");
+  let [inputValue, setinputValue] = useState("");
 
-    const saveData = async () =>{
-
-    }
+  const saveData = async () => {
+  try{
+      await axios.post("http://localhost:5000/writetodatabase", {content: inputValue})
+      console.log("data: ", inputValue)
+  } catch(error){
+      console.log("errorr", error)
+  }
+  }
 
   return (
     <div id='main'>
@@ -48,8 +53,8 @@ const Home=()=> {
             <h3 className="h3-register">Register</h3>
             <input type="radio" name="user" value="freelancer" /> Freelancer
             <input type="radio" name="user" value="employer" /> Employer <br />
-            <input className="input" type="text" placeholder='Fullname'  value={inputvalue}
-            onChange={e => setInputValue(e.target.value)}/>
+            <input className="input" type="text" placeholder='Fullname'  value={inputValue}
+            onChange={e => setinputValue(e.target.value)}/>
             <input className="input" type="text" placeholder='Phonenumber' />
             <input className="input" type="email" placeholder='Email' /> 
             <input className="input" type="password" placeholder='Password' /> <br />

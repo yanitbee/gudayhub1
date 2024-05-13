@@ -17,7 +17,7 @@ export default function Write(){
         <div>
             <input type="string" value={inputValue}
             onChange={e => setinputValue(e.target.value) }/>
-            <button onClick={saveData}>save</button>
+            <button onClick={saveData}>Save</button>
             </div>
             </>
     )
